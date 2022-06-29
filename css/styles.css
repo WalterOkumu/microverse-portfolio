@@ -59,3 +59,23 @@ ul {
   list-style: none;
   padding-left: 0.1px;
 }
+
+.twitter-icon:hover {
+  background-color: palegreen;
+}
+
+.linkedin-icon:hover {
+  background-color: palegreen;
+}
+
+.medium-icon:hover {
+  background-color: palegreen;
+}
+
+.github-icon:hover {
+  background-color: palegreen;
+}
+
+.angellist-icon:hover {
+  background-color: palegreen;
+}
