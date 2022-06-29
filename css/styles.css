@@ -1,0 +1,5 @@
+/* remove default ul formatting */
+ul {
+  list-style: none;
+  padding-left: 0px;
+}
