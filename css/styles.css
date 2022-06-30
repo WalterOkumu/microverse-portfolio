@@ -33,6 +33,7 @@ a {
   background-image: url("../assets/Header_Background.png");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .headline-intro {
