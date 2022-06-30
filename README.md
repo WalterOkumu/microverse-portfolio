@@ -12,7 +12,7 @@
 
 ## Live Demo (if available)
 
-[Live Demo Link]()
+[Live Demo Link](https://walterokumu.github.io/microverse-portfolio/)
 
 ## Getting Started
 
