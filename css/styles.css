@@ -7,14 +7,22 @@
 body {
   margin: 0;
   padding: 0;
+  background: #E5E5E5;
+}
+
+.responsive {
+  width: auto;
+  height: auto;
 }
 
 .nav {
+  width: 100%;
   display: flex;
   flex: 1 1 auto;
   justify-content: space-between;
   text-align: center;
   padding: 1em;
+  background-color: white;
 }
 
 a {
@@ -29,11 +37,13 @@ a {
 }
 
 .headline {
-  margin: 30px;
+  width: 100%;
+  padding: 30px;
   background-image: url("../assets/Header_Background.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  background-color: white;
 }
 
 .headline-intro {
@@ -81,4 +91,51 @@ ul {
 
 .angellist-icon:hover {
   background-color: palegreen;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+  padding: 1px;
+  margin: 1px;
+}
+
+.works-container {
+  display: grid;
+  grid-template-columns: auto;
+  grid-gap: 100px;
+  align-content: space-around;
+  margin: 100px 30px 150px 30px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  height: 580px;
+  border: 1px solid #e5e5e5;
+  border-radius: 3%;
+  padding: 20px 20px;
+  margin: -6px -6px;
+}
+
+.portfolio-card-left {
+  display: flex;
+  column-gap: 5px;
+}
+
+.portfolio-card-right {
+  display: flex;
+  column-gap: 5px;
+}
+
+.card-tags a {
+  font-size: 12px;
+  font-weight: 500;
+  color: #6070ff;
+  border-radius: 8px;
+  text-align: center;
+  background: #ebebff;
+  padding: 5px 10px;
 }
