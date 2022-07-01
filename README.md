@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Microverse Portfolio Website
+# Walter Okumu's Portfolio Website
 
  A portfolio website showcasing my skills
 
@@ -20,7 +20,7 @@
 
 ## Authors
 
-👤 **Author**
+👤 **Walter Okumu**
 
 - GitHub: [@WalterOkumu](https://github.com/WalterOkumu)
 - Twitter: [@OkumuOriaro](https://twitter.com/OkumuOriaro)
