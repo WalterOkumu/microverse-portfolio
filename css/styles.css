@@ -7,13 +7,9 @@
 body {
   margin: 0;
   padding: 0;
-  background: #e5e5e5;
+  background-color: #e5e5e5;
 }
 
-.responsive {
-  width: auto;
-  height: auto;
-}
 
 .nav {
   width: 100%;
@@ -37,7 +33,7 @@ a {
 }
 
 .headline {
-  width: auto;
+  width: 100%;
   padding: 30px;
   background-image: url("../assets/Header_Background.png");
   background-repeat: no-repeat;
@@ -97,6 +93,7 @@ ul {
 
 .works-container {
   display: grid;
+  width: 100%;
   grid-template-columns: auto;
   grid-gap: 100px;
   align-content: space-around;
@@ -108,7 +105,7 @@ ul {
   display: flex;
   border: 1px solid #e5e5e5;
   border-radius: 3%;
-  width: auto;
+  width: 100%;
   height: auto;
   padding: 20px 20px;
   margin-left: auto;
@@ -148,6 +145,11 @@ img {
   margin-top: 30px;
 }
 
+.see-project-button:hover {
+  background-color: blue;
+  color: white;
+}
+
 .get-my-resume-button {
   border-radius: 8px;
   border: 1px solid #3d4ee4;
@@ -163,16 +165,22 @@ img {
   background-color: white;
 }
 
+.get-my-resume-button:hover {
+  background-color: black;
+  color: white;
+}
+
 .about-me-container {
   background-color: white;
   display: flex;
   flex-direction: column;
-  width: auto;
+  width: 100%;
   height: auto;
   padding: 20px 20px;
   margin-left: auto;
   margin-right: auto;
   border-top-right-radius: 25% 50px;
+  gap: 20px;
 }
 
 .expertise {
@@ -196,6 +204,10 @@ img {
 .about-myself i {
   padding-top: 22px;
   align-content: flex-end;
+}
+
+.about-body {
+  font-weight: normal;
 }
 
 .framework {
