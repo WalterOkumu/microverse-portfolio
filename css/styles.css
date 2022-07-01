@@ -7,14 +7,17 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: #e5e5e5;
 }
 
 .nav {
+  width: 100%;
   display: flex;
   flex: 1 1 auto;
   justify-content: space-between;
   text-align: center;
   padding: 1em;
+  background-color: white;
 }
 
 a {
@@ -29,11 +32,13 @@ a {
 }
 
 .headline {
-  margin: 30px;
+  width: 100%;
+  padding: 30px;
   background-image: url("../assets/Header_Background.png");
-  background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-size: 100% 100%;
+  background-color: white;
+  border-bottom-left-radius: 25% 50px;
 }
 
 .headline-intro {
@@ -57,12 +62,6 @@ a {
   font-size: 16px;
 }
 
-/* remove default ul formatting */
-ul {
-  list-style: none;
-  padding-left: 0.1px;
-}
-
 .twitter-icon:hover {
   background-color: palegreen;
 }
@@ -81,4 +80,195 @@ ul {
 
 .angellist-icon:hover {
   background-color: palegreen;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+  padding: 1px;
+  margin: 1px;
+}
+
+.works-container {
+  display: grid;
+  width: 100%;
+  grid-template-columns: auto;
+  grid-gap: 100px;
+  align-content: space-around;
+  margin: 100px 30px 150px 30px;
+}
+
+.card {
+  background-color: white;
+  display: flex;
+  border: 1px solid #e5e5e5;
+  border-radius: 3%;
+  width: 100%;
+  height: auto;
+  padding: 20px 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.card-tags a {
+  font-size: 12px;
+  font-weight: 500;
+  color: #6070ff;
+  border-radius: 8px;
+  text-align: center;
+  background: #ebebff;
+  padding: 5px 10px;
+}
+
+.see-project-button {
+  border-radius: 8px;
+  border: 1px solid #3d4ee4;
+  width: 140px;
+  height: 50px;
+  text-align: center;
+  padding: 10px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  letter-spacing: 0.03em;
+  color: #396df2;
+  background-color: white;
+  margin-top: 30px;
+}
+
+.see-project-button:hover {
+  background-color: blue;
+  color: white;
+}
+
+.get-my-resume-button {
+  border-radius: 8px;
+  border: 1px solid #3d4ee4;
+  width: 140px;
+  height: 50px;
+  text-align: center;
+  padding: 5px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 0.03em;
+  color: #396df2;
+  background-color: white;
+}
+
+.get-my-resume-button:hover {
+  background-color: black;
+  color: white;
+}
+
+.about-me-container {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  padding: 20px 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border-top-right-radius: 25% 50px;
+  gap: 20px;
+}
+
+.expertise {
+  display: flex;
+  flex-direction: column;
+}
+
+.outer-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.skills {
+  display: flex;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  text-align: center;
+  border-bottom: 1px solid #acb7c3;
+}
+
+.about-myself i {
+  padding-top: 22px;
+  align-content: flex-end;
+}
+
+.about-body {
+  font-weight: normal;
+}
+
+.framework {
+  display: flex;
+  text-align: center;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  border-bottom: 1px solid #acb7c3;
+}
+
+.framework p {
+  color: #000;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.skills p {
+  color: #000;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.language {
+  display: flex;
+  text-align: center;
+  flex: 1 1 auto;
+  justify-content: space-between;
+}
+
+.language p {
+  color: #000;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.outer-item {
+  display: flex;
+  text-align: center;
+  flex: 1 1 auto;
+  border-color: #acb7c3;
+  border-radius: 8px;
+  background-color: #f7f7f9;
+  padding: 10px 10px;
+  margin-bottom: 10px;
+}
+
+.outer-item p {
+  font-weight: 500;
+  font-size: 15px;
+  color: #253858;
+  line-height: 20px;
+}
+
+.about-myself {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 20px;
+  padding-top: 100px;
+  margin: -6px -6px;
+  border-top-right-radius: 25% 50px;
 }
