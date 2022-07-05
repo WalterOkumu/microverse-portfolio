@@ -43,7 +43,7 @@ a {
   height: 100%;
   background-image: url("../assets/Header_Background.png");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 100% 100%;
   background-color: white;
   border-bottom-left-radius: 25% 50px;
 }
@@ -306,7 +306,7 @@ img {
   height: 100%;
   background-image: url("../assets/contact_form_background.png");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 100% 100%;
   background-color: #6070ff;
   padding-top: 30px;
   padding-bottom: 30px;
