@@ -43,7 +43,7 @@ a {
   height: 100%;
   background-image: url("../assets/Header_Background.png");
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: 100%;
   background-color: white;
   border-bottom-left-radius: 25% 50px;
 }
@@ -73,8 +73,9 @@ a {
 }
 
 .social-icons {
-  padding-left: 0.5rem;
-  padding-bottom: 1.5rem;
+  /* padding-left: 0.5rem;
+padding-bottom: 1.5rem; */
+  padding: 1rem;
 }
 
 .twitter-icon:hover {
@@ -167,7 +168,45 @@ img {
   color: white;
 }
 
+.about-me-container {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  border-top-right-radius: 25% 50px;
+  padding-bottom: 80px;
+}
+
+.about-title {
+  display: flex;
+  font-weight: 700;
+  font-size: 25px;
+  align-items: center;
+  color: #172B4D;
+  padding-left: 1rem;
+}
+
+.about-body {
+  font-weight: 400;
+  font-size: 16px;
+  /* line-height: 24px; */
+  color: #344563;
+  padding-left: 1rem;
+}
+
+.expertise {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.get-my-resume-button-container {
+  padding: 1rem;
+}
+
 .get-my-resume-button {
+  position: inherit;
   border-radius: 8px;
   border: 1px solid #3d4ee4;
   width: 140px;
@@ -187,22 +226,6 @@ img {
   color: white;
 }
 
-.about-me-container {
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  width: 98%;
-  height: 100%;
-  padding: 0.5rem;
-  border-top-right-radius: 25% 50px;
-  padding-bottom: 80px;
-}
-
-.expertise {
-  display: flex;
-  flex-direction: column;
-}
-
 .outer-flex {
   display: flex;
   flex-direction: column;
@@ -214,14 +237,6 @@ img {
   justify-content: space-between;
   text-align: center;
   border-bottom: 1px solid #acb7c3;
-}
-
-.about-myself i {
-  align-content: flex-end;
-}
-
-.about-body {
-  font-weight: normal;
 }
 
 .framework {
@@ -290,7 +305,7 @@ img {
   height: 100%;
   background-image: url("../assets/contact_form_background.png");
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: 100%;
   background-color: #6070ff;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -309,10 +324,12 @@ img {
 
 .contact-body {
   font-weight: 400;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 28px;
   text-align: center;
   color: #ebebff;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .contact-form {
