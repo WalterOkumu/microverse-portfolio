@@ -177,6 +177,15 @@ img {
 .button:hover {
   background-color: #6070ff;
   color: #fff;
+  animation-name: background-color;
+  animation-duration: 500ms;
+}
+
+/* /keyframes/ */
+@keyframes background-color {
+  100% {
+    background-color: paleturquoise;
+  }
 }
 
 .button:active {
