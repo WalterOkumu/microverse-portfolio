@@ -395,6 +395,24 @@ textarea {
   }
 }
 
+/* /Button hover state/ */
+button:hover {
+
+  animation-name: background-color;
+  animation-duration: 500ms;
+  }
+    /* /keyframes/ */
+  @keyframes background-color {
+    100% {
+      background-color: #4065F3;
+    }
+  }
+
+
+
+
+
+
 @media (min-width: 768px) {
   .mobile-screen {
     display: none;
