@@ -12,11 +12,7 @@
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://walterokumu.github.io/microverse-portfolio/)
-
-## Getting Started
-
-### `npm install`
+[Live Demo Link](https://walterokumu.github.io/walter-okumu-portfolio/)
 
 ## Authors
 
