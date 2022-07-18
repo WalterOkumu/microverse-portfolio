@@ -17,21 +17,38 @@
         Okumu
       </a>
       <div class="mobile-screen">
-        <i class="fa-solid fa-bars hamburger"></i>
+        <div class="mobile-menu-closed hamburger">
+          <a href="#" class="openModal"><i class="fa-solid fa-bars"></i></a>
+        </div>
       </div>
 
       <div class="desktop-nav-buttons desktop-screen">
-        <a href="#">
+        <a href="#works">
           Portfolio
         </a>
-        <a href="#">
+        <a href="#about">
           About
         </a>
-        <a href="#">
+        <a href="#contact">
           Contact
         </a>
       </div>
+
     </nav>
+
+    <div class="mobile-menu-modal">
+      <div class="mobile-menu-closed">
+        <a type="button" class="closeModal"><i class="fa-solid fa-xmark"></i></a>
+      </div>
+      <div class="mobile-menu-open">
+        <ul class="mobile-menu-list">
+          <a type="button" class="navigatePortfolio"><li>Portfolio</li></a>
+          <a type="button" class="navigateAbout"><li>About</li></a>
+          <a type="button" class="navigateContact"><li>Contact</li></a>
+        </ul>
+      </div>
+    </div>
+
     <section class="headline">
       <div class="headline-container">
         <h1 class="headline-intro">
@@ -65,7 +82,7 @@
         </ul>
       </div>
     </section>
-    <section class="works">
+    <section class="works" id="works">
       <div class="works-container">
         <div class="card">
           <img src="./assets/Portfolio_1.png" alt="tonic project" />
@@ -169,7 +186,7 @@
         </div>
       </div>
     </section>
-    <section class="about-me-container">
+    <section class="about-me-container" id="about">
       <div class="about">
         <div class="about-header">
           <h2>About Myself</h2>
@@ -242,7 +259,7 @@
       </div>
     </section>
 
-    <section class="contact-container">
+    <section class="contact-container" id="contact">
       <div class="contact-title">
         <h2>Contact Me</h2>
       </div>
@@ -300,6 +317,43 @@
           navBar.style.backgroundColor = 'white';
         }
       };
+    </script>
+     <script>
+      const openModal = document.getElementsByClassName('openModal')[0];
+      const mobileModal = document.getElementsByClassName('mobile-menu-modal')[0];
+      const closeModal = document.getElementsByClassName('closeModal')[0];
+
+      const navigatePortfolio = document.getElementsByClassName('navigatePortfolio')[0]
+      const navigateAbout = document.getElementsByClassName('navigateAbout')[0]
+      const navigateContact = document.getElementsByClassName('navigateContact')[0]
+
+      openModal.onclick = function() {
+        navBar.style.display = 'none'
+        mobileModal.style.display = 'block'
+      }
+
+      closeModal.onclick = function() {
+        navBar.style.removeProperty('display')
+        mobileModal.style.display = 'none'
+      }
+
+      navigatePortfolio.onclick = function() {
+        navBar.style.removeProperty('display')
+        mobileModal.style.display = 'none'
+        window.location.href = '#works'
+      }
+
+      navigateAbout.onclick = function() {
+        navBar.style.removeProperty('display')
+        mobileModal.style.display = 'none'
+        window.location.href = '#about'
+      }
+
+      navigateContact.onclick = function() {
+        navBar.style.removeProperty('display')
+        mobileModal.style.display = 'none'
+        window.location.href = '#contact'
+      }
     </script>
   </body>
 </html>

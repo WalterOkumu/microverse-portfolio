@@ -260,6 +260,36 @@ textarea {
     padding-right: 0.5rem;
   }
 
+  .mobile-menu-modal {
+    display: none;
+    background-color: #6070FF;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    overflow: auto;
+    font-size: 32px;
+    color: white;
+  }
+
+  .mobile-menu-closed {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 1rem;
+    cursor: pointer;
+  }
+
+  .mobile-menu-open {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .mobile-menu-list,
+  li {
+    padding: 10px;
+    cursor: pointer;
+  }
+
   .mobile-nav-items {
     display: flex;
     flex-direction: column;
@@ -406,6 +436,10 @@ textarea {
     display: none;
   }
 
+  .mobile-menu-modal {
+    display: none;
+  }
+
   .sticky {
     position: -webkit-sticky;
     position: sticky;
@@ -422,10 +456,6 @@ textarea {
     color: #344563;
     gap: 1rem;
     padding-right: 0.5rem;
-  }
-
-  .desktop-nav-buttons:hover {
-    text-decoration: underline;
   }
 
   .headline {
