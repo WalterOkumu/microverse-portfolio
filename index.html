@@ -12,27 +12,26 @@
     <title>Walter Okumu's Portfolio Website</title>
   </head>
   <body>
-    <header>
-      <nav class="nav">
-        <a class="logo" href="#">
-          Okumu
+    <nav class="nav sticky">
+      <a class="logo" href="#">
+        Okumu
+      </a>
+      <div class="mobile-screen">
+        <i class="fa-solid fa-bars hamburger"></i>
+      </div>
+
+      <div class="desktop-nav-buttons desktop-screen">
+        <a href="#">
+          Portfolio
         </a>
-        <div class="mobile-screen">
-          <i class="fa-solid fa-bars mobile-nav-buttons"></i>
-        </div>
-        <div class="desktop-nav-buttons desktop-screen">
-          <a href="#">
-            Portfolio
-          </a>
-          <a href="#">
-            About
-          </a>
-          <a href="#">
-            Contact
-          </a>
-        </div>
-      </nav>
-    </header>
+        <a href="#">
+          About
+        </a>
+        <a href="#">
+          Contact
+        </a>
+      </div>
+    </nav>
     <section class="headline">
       <div class="headline-container">
         <h1 class="headline-intro">
@@ -287,5 +286,20 @@
       </form>
       <img class="bottom-line" src="./assets/Shape.png" alt="line" />
     </section>
+    <script>
+      const navBar = document.getElementsByClassName('nav')[0];
+
+      navBar.style.backgroundColor = 'white';
+
+      // trigger this function every time the user scrolls
+      window.onscroll = function () {
+        const scroll = window.pageYOffset;
+        if (scroll >= 100) {
+          navBar.style.backgroundColor = 'transparent';
+        } else {
+          navBar.style.backgroundColor = 'white';
+        }
+      };
+    </script>
   </body>
 </html>

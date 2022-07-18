@@ -18,7 +18,6 @@ a {
 .nav {
   display: flex;
   width: 100%;
-  background-color: white;
   padding-top: 1%;
 }
 
@@ -257,8 +256,15 @@ textarea {
     text-align: center;
   }
 
-  .mobile-nav-buttons {
+  .hamburger {
     padding-right: 0.5rem;
+  }
+
+  .mobile-nav-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
   }
 
   .desktop-screen {
@@ -398,6 +404,12 @@ textarea {
 @media (min-width: 768px) {
   .mobile-screen {
     display: none;
+  }
+
+  .sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
   }
 
   .desktop-nav-buttons {
