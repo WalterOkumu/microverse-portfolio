@@ -10,6 +10,10 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "babel-eslint": "10.x",
+    "eslint": "7.x",
+    "eslint-config-airbnb-base": "14.x",
+    "eslint-plugin-import": "2.x",
     "hint": "^7.0.1",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^21.0.0",
