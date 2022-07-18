@@ -262,7 +262,7 @@ textarea {
 
   .mobile-menu-modal {
     display: none;
-    background-color: #6070FF;
+    background-color: rgba(96, 112, 255, 0.8);
     height: 100%;
     width: 100%;
     position: fixed;
