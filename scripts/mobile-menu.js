@@ -1,36 +1,23 @@
-const navBar = document.getElementsByClassName('nav')[0];
-const openModal = document.getElementsByClassName('openModal')[0];
-const mobileModal = document.getElementsByClassName('mobile-menu-modal')[0];
-const closeModal = document.getElementsByClassName('closeModal')[0];
-
-const navigatePortfolio = document.getElementsByClassName('navigatePortfolio')[0];
-const navigateAbout = document.getElementsByClassName('navigateAbout')[0];
-const navigateContact = document.getElementsByClassName('navigateContact')[0];
-
-openModal.onclick = function () {
+/* eslint-disable no-undef */
+const mobileModal = document.getElementById('mobile-menu-modal');
+// eslint-disable-next-line no-unused-vars
+function openMod() {
+  // eslint-disable-next-line no-unused-vars
+  const openModal = document.getElementById('openModal');
   navBar.style.display = 'none';
   mobileModal.style.display = 'block';
-};
-
-closeModal.onclick = function () {
+}
+function closeModal() {
   navBar.style.removeProperty('display');
   mobileModal.style.display = 'none';
-};
-
-navigatePortfolio.onclick = function () {
-  navBar.style.removeProperty('display');
-  mobileModal.style.display = 'none';
-  window.location.href = '#works';
-};
-
-navigateAbout.onclick = function () {
-  navBar.style.removeProperty('display');
-  mobileModal.style.display = 'none';
-  window.location.href = '#about';
-};
-
-navigateContact.onclick = function () {
-  navBar.style.removeProperty('display');
-  mobileModal.style.display = 'none';
-  window.location.href = '#contact';
-};
+}
+// eslint-disable-next-line no-unused-vars
+function navigate(anchorId) {
+  closeModal();
+  // eslint-disable-next-line no-restricted-globals
+  const url = location.href;
+  // eslint-disable-next-line no-restricted-globals
+  location.href = `#${anchorId}`;
+  // eslint-disable-next-line no-restricted-globals
+  history.replaceState(null, null, url);
+}

@@ -18,7 +18,7 @@
       </a>
       <div class="mobile-screen">
         <div class="mobile-menu-closed hamburger">
-          <a href="#" class="openModal"><i class="fa-solid fa-bars"></i></a>
+          <a href="#" class="openModal" id="openModal" onclick="openMod()"><i class="fa-solid fa-bars"></i></a>
         </div>
       </div>
 
@@ -36,15 +36,15 @@
 
     </nav>
 
-    <div class="mobile-menu-modal">
+    <div class="mobile-menu-modal" id="mobile-menu-modal">
       <div class="mobile-menu-closed">
-        <a href="#" class="closeModal"><i class="fa-solid fa-xmark"></i></a>
+        <a href="#" class="closeModal" id="closeModal" onclick="closeModal()"><i class="fa-solid fa-xmark"></i></a>
       </div>
       <div class="mobile-menu-open">
         <ul class="mobile-menu-list">
-          <li><a href="#" class="navigatePortfolio">Portfolio</a></li>
-          <li><a href="#" class="navigateAbout">About</a></li>
-          <li><a href="#" class="navigateContact">Contact</a></li>
+          <li><a href="#works" class="navigatePortfolio" onclick="navigate('works')">Portfolio</a></li>
+          <li><a href="#about" class="navigateAbout" onclick="navigate('about')">About</a></li>
+          <li><a href="#contact" class="navigateContact" onclick="navigate('contact')">Contact</a></li>
         </ul>
       </div>
     </div>

@@ -271,7 +271,14 @@ textarea {
 
   .mobile-menu-modal {
     display: none;
-    background: rgba(96, 112, 255, 0.85);
+    background:
+      radial-gradient(
+        circle,
+        rgb(96 112 255 / 89.4%) 0%,
+        rgb(96 112 255 / 84.4%) 35%,
+        rgb(96 112 255 / 88.9%) 100%
+      );
+    border: none;
     background-blend-mode: multiply;
     backdrop-filter: blur(7px);
     height: 100%;
@@ -280,6 +287,7 @@ textarea {
     z-index: 1;
     overflow: auto;
     font-size: 32px;
+    font-weight: 600;
     color: white;
   }
 
@@ -292,7 +300,7 @@ textarea {
 
   .mobile-menu-open {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-start;
   }
 
   .mobile-menu-list,
