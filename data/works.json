@@ -1,0 +1,57 @@
+{
+  "0": {
+    "ProjectName": "Tonic",
+    "ProjectSubtitle": "CANOPY &#8226; Back End Dev &#8226; 2015",
+    "Image": "./assets/Portfolio_1.png",
+    "ProjectDescription": "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+    "Technologies": [
+      "html",
+      "css",
+      "javascript"
+    ],
+    "ProjectLink": "https://walterokumu.github.io/walter-okumu-portfolio/",
+    "GitHubLink": "https://github.com/WalterOkumu/walter-okumu-portfolio"
+  },
+  "1": {
+    "ProjectName": "Multi-Post Stories",
+    "ProjectSubtitle": "FACEBOOK &#8226; Full Stack Dev &#8226; 2015",
+    "Image": "./assets/Portfolio_2.png",
+    "ProjectDescription": "Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.",
+    "Technologies": [
+      "html",
+      "ruby on rails",
+      "css",
+      "javascript"
+    ],
+    "ProjectLink": "https://walterokumu.github.io/walter-okumu-portfolio/",
+    "GitHubLink": "https://github.com/WalterOkumu/walter-okumu-portfolio"
+  },
+  "2": {
+    "ProjectName": "Facebook 360",
+    "ProjectSubtitle": "FACEBOOK &#8226; Full Stack Dev &#8226; 2015",
+    "Image": "./assets/Portfolio_3.png",
+    "ProjectDescription": "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
+    "Technologies": [
+      "html",
+      "ruby on rails",
+      "css",
+      "javascript"
+    ],
+    "ProjectLink": "https://walterokumu.github.io/walter-okumu-portfolio/",
+    "GitHubLink": "https://github.com/WalterOkumu/walter-okumu-portfolio"
+  },
+  "3": {
+    "ProjectName": "Uber Navigation",
+    "ProjectSubtitle": "Uber &#8226; Lead Developer &#8226; 2018",
+    "Image": "./assets/Portfolio_4.png",
+    "ProjectDescription": "A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.",
+    "Technologies": [
+      "html",
+      "ruby on rails",
+      "css",
+      "javascript"
+    ],
+    "ProjectLink": "https://walterokumu.github.io/walter-okumu-portfolio/",
+    "GitHubLink": "https://github.com/WalterOkumu/walter-okumu-portfolio"
+  }
+}
