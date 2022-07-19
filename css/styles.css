@@ -18,7 +18,6 @@ a {
 .nav {
   display: flex;
   width: 100%;
-  background-color: white;
   padding-top: 1%;
 }
 
@@ -266,8 +265,55 @@ textarea {
     text-align: center;
   }
 
-  .mobile-nav-buttons {
+  .hamburger {
     padding-right: 0.5rem;
+  }
+
+  .mobile-menu-modal {
+    display: none;
+    background:
+      radial-gradient(
+        circle,
+        rgb(96 112 255 / 89.4%) 0%,
+        rgb(96 112 255 / 84.4%) 35%,
+        rgb(96 112 255 / 88.9%) 100%
+      );
+    border: none;
+    background-blend-mode: multiply;
+    backdrop-filter: blur(7px);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    overflow: auto;
+    font-size: 32px;
+    font-weight: 600;
+    color: white;
+  }
+
+  .mobile-menu-closed {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 1rem;
+    cursor: pointer;
+  }
+
+  .mobile-menu-open {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .mobile-menu-list,
+  li {
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  .mobile-nav-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
   }
 
   .desktop-screen {
@@ -409,6 +455,16 @@ textarea {
     display: none;
   }
 
+  .mobile-menu-modal {
+    display: none;
+  }
+
+  .sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+  }
+
   .desktop-nav-buttons {
     width: 100%;
     display: inline-flex;
@@ -419,10 +475,6 @@ textarea {
     color: #344563;
     gap: 1rem;
     padding-right: 0.5rem;
-  }
-
-  .desktop-nav-buttons:hover {
-    text-decoration: underline;
   }
 
   .headline {

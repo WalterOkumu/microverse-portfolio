@@ -12,27 +12,43 @@
     <title>Walter Okumu's Portfolio Website</title>
   </head>
   <body>
-    <header>
-      <nav class="nav">
-        <a class="logo" href="#">
-          Okumu
+    <nav class="nav sticky" id="navBar">
+      <a class="logo" href="#">
+        Okumu
+      </a>
+      <div class="mobile-screen">
+        <div class="mobile-menu-closed hamburger">
+          <a href="#" class="openModal" id="openModal" onclick="openMod()"><i class="fa-solid fa-bars"></i></a>
+        </div>
+      </div>
+
+      <div class="desktop-nav-buttons desktop-screen">
+        <a href="#works">
+          Portfolio
         </a>
-        <div class="mobile-screen">
-          <i class="fa-solid fa-bars mobile-nav-buttons"></i>
-        </div>
-        <div class="desktop-nav-buttons desktop-screen">
-          <a href="#">
-            Portfolio
-          </a>
-          <a href="#">
-            About
-          </a>
-          <a href="#">
-            Contact
-          </a>
-        </div>
-      </nav>
-    </header>
+        <a href="#about">
+          About
+        </a>
+        <a href="#contact">
+          Contact
+        </a>
+      </div>
+
+    </nav>
+
+    <div class="mobile-menu-modal" id="mobile-menu-modal">
+      <div class="mobile-menu-closed">
+        <a href="#" class="closeModal" id="closeModal" onclick="closeModal()"><i class="fa-solid fa-xmark"></i></a>
+      </div>
+      <div class="mobile-menu-open">
+        <ul class="mobile-menu-list">
+          <li><a href="#works" class="navigatePortfolio" onclick="navigate('works')">Portfolio</a></li>
+          <li><a href="#about" class="navigateAbout" onclick="navigate('about')">About</a></li>
+          <li><a href="#contact" class="navigateContact" onclick="navigate('contact')">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
     <section class="headline">
       <div class="headline-container">
         <h1 class="headline-intro">
@@ -66,7 +82,7 @@
         </ul>
       </div>
     </section>
-    <section class="works">
+    <section class="works" id="works">
       <div class="works-container">
         <div class="card">
           <img src="./assets/Portfolio_1.png" alt="tonic project" />
@@ -170,7 +186,7 @@
         </div>
       </div>
     </section>
-    <section class="about-me-container">
+    <section class="about-me-container" id="about">
       <div class="about">
         <div class="about-header">
           <h2>About Myself</h2>
@@ -243,7 +259,7 @@
       </div>
     </section>
 
-    <section class="contact-container">
+    <section class="contact-container" id="contact">
       <div class="contact-title">
         <h2>Contact Me</h2>
       </div>
@@ -287,5 +303,8 @@
       </form>
       <img class="bottom-line" src="./assets/Shape.png" alt="line" />
     </section>
+    <script src="./scripts/stickyNavbar.js"></script>
+     <script src="./scripts/mobile-menu.js">
+    </script>
   </body>
 </html>
