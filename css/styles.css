@@ -150,6 +150,7 @@ img {
   text-align: center;
   background: #ebebff;
   padding: 5px 10px 5px 10px;
+  margin: 3px;
 }
 
 .button {
@@ -272,12 +273,10 @@ textarea {
   .mobile-menu-modal {
     display: none;
     background:
-      radial-gradient(
-        circle,
+      radial-gradient(circle,
         rgb(96 112 255 / 89.4%) 0%,
         rgb(96 112 255 / 84.4%) 35%,
-        rgb(96 112 255 / 88.9%) 100%
-      );
+        rgb(96 112 255 / 88.9%) 100%);
     border: none;
     background-blend-mode: multiply;
     backdrop-filter: blur(7px);
