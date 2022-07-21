@@ -1,10 +1,12 @@
 const bullet = '•';
 const apostrophe = '\u0027';
-const worksData = [
+export const worksData = [
   {
     id: 0,
     ProjectName: 'Tonic',
     ProjectSubtitle: `CANOPY ${bullet} Back End Dev ${bullet} 2015`,
+    ProjectSubtitle1: 'CANOPY',
+    ProjectSubtitle2: ` ${bullet} Back End Dev ${bullet} 2015`,
     Image: './assets/Portfolio_1.png',
     ProjectDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     Technologies: [
@@ -19,6 +21,8 @@ const worksData = [
     id: 1,
     ProjectName: 'Multi-Post Stories',
     ProjectSubtitle: `FACEBOOK ${bullet} Full Stack Dev ${bullet} 2015`,
+    ProjectSubtitle1: 'FACEBOOK',
+    ProjectSubtitle2: ` ${bullet} Full Stack Dev ${bullet} 2015`,
     Image: './assets/Portfolio_2.png',
     ProjectDescription: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
     Technologies: [
@@ -34,6 +38,8 @@ const worksData = [
     id: 2,
     ProjectName: 'Facebook 360',
     ProjectSubtitle: `FACEBOOK ${bullet} Full Stack Dev ${bullet} 2015`,
+    ProjectSubtitle1: 'FACEBOOK',
+    ProjectSubtitle2: ` ${bullet} Full Stack Dev ${bullet} 2015`,
     Image: './assets/Portfolio_3.png',
     ProjectDescription: `Exploring the future of media in Facebook${apostrophe}s first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.`,
     Technologies: [
@@ -49,6 +55,8 @@ const worksData = [
     id: 3,
     ProjectName: 'Uber Navigation',
     ProjectSubtitle: `Uber ${bullet} Lead Developer ${bullet} 2018`,
+    ProjectSubtitle1: 'Uber',
+    ProjectSubtitle2: ` ${bullet} Lead Developer ${bullet} 2018`,
     Image: './assets/Portfolio_4.png',
     ProjectDescription: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
     Technologies: [
@@ -69,6 +77,7 @@ export function objectToHTML(jsObject) {
 export function createDiv(name) {
   const div = document.createElement('div');
   div.className = name;
+  div.id = name;
   return div;
 }
 
@@ -88,6 +97,7 @@ export function createH2(content) {
 export function createP(name, content) {
   const p = document.createElement('p');
   p.className = name;
+  p.id = name;
   p.innerHTML = content;
   return p;
 }
@@ -95,39 +105,39 @@ export function createP(name, content) {
 export function createUL(name) {
   const ul = document.createElement('ul');
   ul.className = name;
+  ul.id = name;
   return ul;
 }
 
 export function createLI(name, content) {
   const li = document.createElement('li');
   li.className = name;
+  li.id = name;
   li.innerHTML = content;
   return li;
 }
 
-export function createLiItems(totalItems, wkIndex) {
+export function createLiItems(totalItems, wkIndex, name) {
   const liItems = [];
 
   for (let i = 0; i < totalItems; i += 1) {
-    liItems[i] = createLI('card-tags', worksData[wkIndex].Technologies[i]);
+    liItems[i] = createLI(name, worksData[wkIndex].Technologies[i]);
   }
 
   return objectToHTML(liItems);
 }
 
-export function createButton(name, content) {
+export function createButton(name, content, id) {
   const button = document.createElement('button');
   button.className = name;
   button.innerHTML = content;
   button.type = 'button';
-  button.id = 'worksButton';
+  button.id = `worksButton-${id}`;
   return button;
 }
 
 const worksSection = document.getElementById('works');
 const worksContainer = createDiv('works-container');
-
-const cardList = [];
 
 function createElements(wdIndex) {
   const card = createDiv('card', '');
@@ -143,9 +153,9 @@ function createElements(wdIndex) {
 
   const p = createP('card-body-text', worksData[wdIndex].ProjectDescription);
   const ul = createUL('card-list');
-  const li = createLiItems(worksData[wdIndex].Technologies.length, wdIndex);
+  const li = createLiItems(worksData[wdIndex].Technologies.length, wdIndex, 'card-tags');
 
-  const button = createButton('button', 'See Project');
+  const button = createButton('button', 'See Project', worksData[wdIndex].id);
 
   card.appendChild(image);
   card.appendChild(cardBody);
@@ -166,12 +176,16 @@ function createElements(wdIndex) {
   return card;
 }
 
-for (let i = 0; i < worksData.length; i += 1) {
-  cardList[i] = createElements(i);
+export function populateCards() {
+  const cardList = [];
+
+  for (let i = 0; i < worksData.length; i += 1) {
+    cardList[i] = createElements(i);
+  }
+
+  return cardList;
 }
 
-const cardHTML = objectToHTML(cardList);
-
-worksContainer.innerHTML = cardHTML;
+worksContainer.innerHTML = objectToHTML(populateCards());
 
 worksSection.appendChild(worksContainer);

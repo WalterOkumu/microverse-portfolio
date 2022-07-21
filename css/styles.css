@@ -167,6 +167,7 @@ img {
   color: #396df2;
   background-color: white;
   margin-top: 30px;
+  cursor: pointer;
 }
 
 .get-my-resume-button {
@@ -273,10 +274,12 @@ textarea {
   .mobile-menu-modal {
     display: none;
     background:
-      radial-gradient(circle,
+      radial-gradient(
+        circle,
         rgb(96 112 255 / 89.4%) 0%,
         rgb(96 112 255 / 84.4%) 35%,
-        rgb(96 112 255 / 88.9%) 100%);
+        rgb(96 112 255 / 88.9%) 100%
+      );
     border: none;
     background-blend-mode: multiply;
     backdrop-filter: blur(7px);
@@ -616,4 +619,147 @@ textarea {
   .bottom-line {
     display: none;
   }
+}
+
+/* Modal CSS */
+
+.project-modal {
+  display: none;
+  background-color: transparent;
+  left: 0;
+  top: 0;
+  border: 1px solid #ebecf0;
+  z-index: 1;
+  position: fixed;
+  margin-top: 2rem;
+  background-blend-mode: multiply;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  border: 1px solid #888;
+  width: 80vw;
+  height: 80vh;
+  padding: 20px;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  overflow-y: scroll;
+  border-radius: 16px;
+  box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+}
+
+.modal-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.modal-header-title {
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.modal-close-button {
+  cursor: pointer;
+}
+
+.modal-subtitle {
+  display: flex;
+}
+
+.modal-subtitle-part-1 {
+  color: #344563;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.modal-subtitle-part-2 {
+  color: #7a869a;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.modal-image {
+  min-height: 100%;
+  min-width: 100%;
+  border-radius: 8px;
+}
+
+@media (max-width: 767px) {
+  .modal-footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .modal-footer-right-buttons {
+    display: inline-flex;
+    width: 50%;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 15px;
+    border: 1px solid #dfe1e6;
+  }
+}
+
+@media (min-width: 768px) {
+  .modal-footer {
+    display: flex;
+    gap: 20px;
+  }
+
+  .modal-footer-right {
+    padding-top: 15px;
+    width: 45%;
+  }
+
+  .modal-footer-left {
+    width: 55%;
+  }
+}
+
+.modal-footer-left {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.modal-footer-right-list,
+ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.modal-footer-right-list-item,
+li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 2px;
+  margin-left: 5px;
+  gap: 5px;
+  margin-right: 5px;
+  background: #ebebff;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 0.03em;
+  color: #6070ff;
+}
+
+.modal-footer-right-line {
+  border: 1px solid #ebecf0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.modal-footer-right-buttons {
+  background: #fff;
+  border: 1px solid #ebecf0;
+  box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+  border-radius: 16px;
+  font-weight: 500;
+  font-size: 15px;
+  align-items: center;
+  text-align: center;
+  color: #396df2;
+  cursor: pointer;
 }
