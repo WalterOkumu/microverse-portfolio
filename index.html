@@ -9,6 +9,7 @@
       src="https://kit.fontawesome.com/0728e06898.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <title>Walter Okumu's Portfolio Website</title>
   </head>
   <body>
@@ -82,109 +83,8 @@
         </ul>
       </div>
     </section>
-    <section class="works" id="works">
-      <div class="works-container">
-        <div class="card">
-          <img src="./assets/Portfolio_1.png" alt="tonic project" />
-          <div class="card-body">
-            <div class="card-title">
-              <h2>Tonic</h2>
-            </div>
-            <div class="card-subtitle">
-              CANOPY &#8226; Back End Dev &#8226; 2015
-            </div>
-            <p class="card-body-text">
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required.
-            </p>
-            <ul class="card-list">
-              <li class="card-tags">html</li>
-              <li class="card-tags">css</li>
-              <li class="card-tags">javascript</li>
-            </ul>
-            <button type="button" class="button">
-              See Project
-            </button>
-          </div>
-        </div>
-        <div class="card">
-          <img
-            src="./assets/Portfolio_2.png"
-            alt="multi-post stories project"
-          />
-          <div class="card-body">
-            <div class="card-title">
-              <h2>Multi-Post Stories</h2>
-            </div>
-            <div class="card-subtitle">
-              FACEBOOK &#8226; Full Stack Dev &#8226; 2015
-            </div>
-            <p class="card-body-text">
-              Experimental content creation feature that allows users to add to
-              an existing story over the course of a day without spamming their
-              friends.
-            </p>
-            <ul class="card-list">
-              <li class="card-tags">html</li>
-              <li class="card-tags">ruby on rails</li>
-              <li class="card-tags">css</li>
-              <li class="card-tags">javascript</li>
-            </ul>
-            <button type="button" class="button">
-              See Project
-            </button>
-          </div>
-        </div>
-        <div class="card">
-          <img src="./assets/Portfolio_3.png" alt="facebook 360 project" />
-          <div class="card-body">
-            <div class="card-title">
-              <h2>Facebook 360</h2>
-            </div>
-            <div class="card-subtitle">
-              FACEBOOK &#8226; Full Stack Dev &#8226; 2015
-            </div>
-            <p class="card-body-text">
-              Exploring the future of media in Facebook's first Virtual Reality
-              app; a place to discover and enjoy 360 photos and videos on Gear
-              VR.
-            </p>
-            <ul class="card-list">
-              <li class="card-tags">html</li>
-              <li class="card-tags">ruby on rails</li>
-              <li class="card-tags">css</li>
-              <li class="card-tags">javascript</li>
-            </ul>
-            <button type="button" class="button">
-              See Project
-            </button>
-          </div>
-        </div>
-        <div class="card">
-          <img src="./assets/Portfolio_4.png" alt="uber navigation project" />
-          <div class="card-body">
-            <div class="card-title">
-              <h2>Uber Navigation</h2>
-            </div>
-            <div class="card-subtitle">
-              Uber &#8226; Lead Developer &#8226; 2018
-            </div>
-            <p class="card-body-text">
-              A smart assistant to make driving more safe, efficient, and fun by
-              unlocking your most expensive computer: your car.
-            </p>
-            <ul class="card-list">
-              <li class="card-tags">html</li>
-              <li class="card-tags">ruby on rails</li>
-              <li class="card-tags">css</li>
-              <li class="card-tags">javascript</li>
-            </ul>
-            <button type="button" class="button">
-              See Project
-            </button>
-          </div>
-        </div>
-      </div>
+    <section class="works" id="works" onload="renderCards()">
+      <!-- Code removed to dynamically run via JS -->
     </section>
     <section class="about-me-container" id="about">
       <div class="about">
@@ -304,7 +204,8 @@
       <img class="bottom-line" src="./assets/Shape.png" alt="line" />
     </section>
     <script src="./scripts/stickyNavbar.js"></script>
-     <script src="./scripts/mobile-menu.js">
-    </script>
+    <script src="./scripts/mobileMenu.js"></script>
+    <script type="module" src="./scripts/renderWorks.js"></script>
+    <script type="module" src="./scripts/projectsPopUp.js"></script>
   </body>
 </html>
