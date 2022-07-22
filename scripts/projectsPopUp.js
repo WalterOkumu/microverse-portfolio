@@ -1,24 +1,20 @@
 import {
-  createButton, createDiv, createImage, createLI, createP, createUL, worksData, createLiItems,
+  createButton, createDiv, createImage, createLiItems, createP, createUL, worksData,
 } from './renderWorks.js';
 
-// function updateContent() {
-//   const modalHeaderTitle = document.getElementById('modal-header-title');
+const body = document.getElementsByTagName('body')[0];
 
-//   const modalCloseButton = document.getElementById('modal-close-button');
-
-// }
-
-// function closeModal() {
-//   // eslint-disable-next-line func-names
-//   sd
-// }
+const project0Button = document.getElementById('worksButton-0');
+const project1Button = document.getElementById('worksButton-1');
+const project2Button = document.getElementById('worksButton-2');
+const project3Button = document.getElementById('worksButton-3');
 
 function checkOutsideClick(projectModal) {
   // eslint-disable-next-line func-names
   window.onclick = function (event) {
     if (event.target === projectModal) {
       projectModal.style.display = 'none';
+      body.style.overflow = 'auto';
     }
   };
 }
@@ -41,6 +37,7 @@ function createModal(wkDataIndex) {
   modalCloseButton.addEventListener('click', (event) => {
     if (event.srcElement.className === 'fa-solid fa-xmark') {
       projectModal.style.display = 'none';
+      body.style.overflow = 'auto';
     }
   });
 
@@ -64,11 +61,15 @@ function createModal(wkDataIndex) {
 
   modalContent.appendChild(modalSubtitle);
 
+  const imageContainer = createDiv('image-container');
+
   const image = createImage(worksData[wkDataIndex].Image, worksData[wkDataIndex].ProjectName);
 
   image.className = 'modal-image';
 
-  modalContent.appendChild(image);
+  imageContainer.appendChild(image);
+
+  modalContent.appendChild(imageContainer);
 
   const modalFooter = createDiv('modal-footer');
 
@@ -80,30 +81,30 @@ function createModal(wkDataIndex) {
 
   const modalFooterRightList = createUL('modal-footer-right-list');
 
-  const modalFooterRightListItem = createLI('modal-footer-right-list-item');
-
-  const listItems = createLiItems(worksData[wkDataIndex].Technologies.length, wkDataIndex, 'modal-footer-right-list-item');
-
-  modalFooterRightListItem.innerHTML = listItems.replace(/,/g, ' ');
+  const modalFooterRightListItem = createLiItems(worksData[wkDataIndex].Technologies.length, wkDataIndex, 'modal-footer-right-list-item');
 
   const hr = document.createElement('hr');
 
-  const modalFooterRightButton1 = createButton('modal-footer-right-buttons');
+  const buttonContainer = createDiv('modal-button-container');
+
+  const modalFooterRightButton1 = createButton('modal-button');
 
   modalFooterRightButton1.innerHTML = 'See Live <i class="bi bi-arrow-up-right-circle"></i>';
 
-  const modalFooterRightButton2 = createButton('modal-footer-right-buttons');
+  const modalFooterRightButton2 = createButton('modal-button');
 
   modalFooterRightButton2.innerHTML = 'See Source <i class="fa-brands fa-github github-icon"></i>';
 
-  modalFooterRightList.appendChild(modalFooterRightListItem);
+  modalFooterRightList.innerHTML = modalFooterRightListItem.replace(/,/g, '');
 
   modalFooterRight.appendChild(modalFooterRightList);
 
   modalFooterRight.appendChild(hr);
 
-  modalFooterRight.appendChild(modalFooterRightButton1);
-  modalFooterRight.appendChild(modalFooterRightButton2);
+  buttonContainer.appendChild(modalFooterRightButton1);
+  buttonContainer.appendChild(modalFooterRightButton2);
+
+  modalFooterRight.appendChild(buttonContainer);
 
   modalFooter.appendChild(modalFooterLeft);
   modalFooter.appendChild(modalFooterRight);
@@ -115,24 +116,19 @@ function createModal(wkDataIndex) {
   return projectModal;
 }
 
-const body = document.getElementsByTagName('body')[0];
-
-const project0Button = document.getElementById('worksButton-0');
-const project1Button = document.getElementById('worksButton-1');
-const project2Button = document.getElementById('worksButton-2');
-const project3Button = document.getElementById('worksButton-3');
-
 // eslint-disable-next-line func-names
 project0Button.onclick = function () {
   const wkDataIndex = 0;
 
   const projectModal = createModal(wkDataIndex);
 
-  projectModal.style.display = 'block';
+  projectModal.style.display = 'flex';
 
   checkOutsideClick(projectModal);
 
   body.appendChild(projectModal);
+
+  body.style.overflow = 'hidden';
 };
 
 // eslint-disable-next-line func-names
@@ -141,11 +137,13 @@ project1Button.onclick = function () {
 
   const projectModal = createModal(wkDataIndex);
 
-  projectModal.style.display = 'block';
+  projectModal.style.display = 'flex';
 
   checkOutsideClick(projectModal);
 
   body.appendChild(projectModal);
+
+  body.style.overflow = 'hidden';
 };
 
 // eslint-disable-next-line func-names
@@ -154,11 +152,13 @@ project2Button.onclick = function () {
 
   const projectModal = createModal(wkDataIndex);
 
-  projectModal.style.display = 'block';
+  projectModal.style.display = 'flex';
 
   checkOutsideClick(projectModal);
 
   body.appendChild(projectModal);
+
+  body.style.overflow = 'hidden';
 };
 
 // eslint-disable-next-line func-names
@@ -167,9 +167,11 @@ project3Button.onclick = function () {
 
   const projectModal = createModal(wkDataIndex);
 
-  projectModal.style.display = 'block';
+  projectModal.style.display = 'flex';
 
   checkOutsideClick(projectModal);
 
   body.appendChild(projectModal);
+
+  body.style.overflow = 'hidden';
 };

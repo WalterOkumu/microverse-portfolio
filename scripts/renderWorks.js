@@ -81,10 +81,11 @@ export function createDiv(name) {
   return div;
 }
 
-export function createImage(imagePath, altText) {
+export function createImage(imagePath, altText, name) {
   const image = document.createElement('img');
   image.src = imagePath;
   image.alt = altText;
+  image.className = name;
   return image;
 }
 
@@ -132,7 +133,9 @@ export function createButton(name, content, id) {
   button.className = name;
   button.innerHTML = content;
   button.type = 'button';
-  button.id = `worksButton-${id}`;
+  if (content === 'See Project') {
+    button.id = `worksButton-${id}`;
+  }
   return button;
 }
 
@@ -142,7 +145,7 @@ const worksContainer = createDiv('works-container');
 function createElements(wdIndex) {
   const card = createDiv('card', '');
 
-  const image = createImage(worksData[wdIndex].Image, worksData[wdIndex].ProjectName);
+  const image = createImage(worksData[wdIndex].Image, worksData[wdIndex].ProjectName, 'card-images');
 
   const cardBody = createDiv('card-body');
 
