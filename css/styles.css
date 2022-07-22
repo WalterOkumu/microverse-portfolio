@@ -791,3 +791,8 @@ textarea {
     height: 5px;
   }
 }
+
+.error-message {
+  color: red;
+  background-color: white;
+}

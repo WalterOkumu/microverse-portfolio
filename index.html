@@ -168,10 +168,13 @@
         that you need built or a project that needs coding. I’d love to help
         with it
       </p>
+
       <form
         action="https://formspree.io/f/xjvlqgoq"
         method="post"
         class="contact-form"
+        id="contact-form"
+        name="contact-form"
       >
         <div class="form-fields">
           <input
@@ -186,6 +189,7 @@
             class="form-item"
             type="email"
             name="email"
+            id="emailAddress"
             placeholder="Email Address"
             required
           />
@@ -196,16 +200,22 @@
             required
             maxlength="500"
           ></textarea>
-          <button type="submit" class="button get-in-touch-button">
-            Get in Touch
-          </button>
+          <div class="contact-form-actions">
+            <button type="submit" class="button get-in-touch-button" id="submitButton">
+              Get in Touch
+            </button>
+            <small id="error-message">
+            </small>
+          </div>
         </div>
       </form>
+
       <img class="bottom-line" src="./assets/Shape.png" alt="line" />
     </section>
     <script src="./scripts/stickyNavbar.js"></script>
     <script src="./scripts/mobileMenu.js"></script>
     <script type="module" src="./scripts/renderWorks.js"></script>
     <script type="module" src="./scripts/projectsPopUp.js"></script>
+    <script type="module" src="./scripts/confirm-validation.js"></script>
   </body>
 </html>
