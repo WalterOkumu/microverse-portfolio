@@ -636,6 +636,7 @@ textarea {
   justify-content: center;
   align-items: center;
   border: 1px solid #ebecf0;
+  flex-direction: column;
 }
 
 .modal-content {
@@ -646,7 +647,7 @@ textarea {
   overflow: auto;
   border-radius: 16px;
   box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
-  padding: 10px;
+  padding: 20px;
 }
 
 .modal-header {
@@ -666,6 +667,8 @@ textarea {
 
 .modal-subtitle {
   display: flex;
+  margin-top: 15px;
+  margin-bottom: 25px;
 }
 
 .modal-subtitle-part-1 {
@@ -774,4 +777,17 @@ textarea {
   color: #396df2;
   background-color: white;
   cursor: pointer;
+}
+
+@media (max-width: 767px) {
+  .bottom-image-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .modal-bottom-line {
+    margin-top: 40px;
+    width: 100px;
+    height: 5px;
+  }
 }

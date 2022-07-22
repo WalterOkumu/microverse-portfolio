@@ -113,6 +113,14 @@ function createModal(wkDataIndex) {
 
   projectModal.appendChild(modalContent);
 
+  const bottomImageContainer = createDiv('bottom-image-container');
+
+  const bottomLine = createImage('./assets/Shape.png', 'modal-bottom-line', 'modal-bottom-line');
+
+  bottomImageContainer.appendChild(bottomLine);
+
+  projectModal.appendChild(bottomImageContainer);
+
   return projectModal;
 }
 
