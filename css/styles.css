@@ -23,7 +23,7 @@ a {
 
 .logo {
   font-weight: 700;
-  font-size: 18px;
+  font-size: 1.125em;
   color: #6070ff;
   padding-left: 1.5rem;
 }
@@ -47,7 +47,7 @@ ul {
 
 .headline-intro {
   font-weight: 700;
-  font-size: 48px;
+  font-size: 3em;
   letter-spacing: 0.37px;
   line-height: 60px;
   color: #091e42;
@@ -59,7 +59,7 @@ ul {
   justify-content: center;
   align-items: center;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 1.25em;
   color: #344563;
   padding-left: 15%;
   padding-right: 15%;
@@ -68,7 +68,7 @@ ul {
 .connect-header {
   color: #7f8cff;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 1em;
 }
 
 .social-icons-header {
@@ -76,13 +76,13 @@ ul {
   gap: 15px;
   padding: 1px;
   margin: 1px;
-  font-size: 25px;
+  font-size: 1.563em;
 }
 
 .connect-about {
   color: #7f8cff;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 1em;
 }
 
 .social-icons-about {
@@ -90,7 +90,7 @@ ul {
   gap: 15px;
   padding: 1px;
   margin: 1px;
-  font-size: 25px;
+  font-size: 1.563em;
 }
 
 .twitter-icon:hover {
@@ -159,7 +159,7 @@ ul {
   padding: 10px;
   font-style: normal;
   font-weight: 500;
-  font-size: 17px;
+  font-size: 1.063em;
   letter-spacing: 0.03em;
   color: #396df2;
   background-color: white;
@@ -169,7 +169,7 @@ ul {
 
 .get-my-resume-button {
   padding: 5px;
-  font-size: 15px;
+  font-size: 0.938em;
 }
 
 .button:hover {
@@ -217,14 +217,14 @@ hr {
   align-items: center;
   text-align: center;
   font-weight: 700;
-  font-size: 40px;
+  font-size: 2.5em;
   line-height: 52px;
   color: #fff;
 }
 
 .contact-body {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1em;
   line-height: 28px;
   text-align: center;
   color: #ebebff;
@@ -245,7 +245,7 @@ hr {
 
 .form-item {
   font-weight: 500;
-  font-size: 15px;
+  font-size: 0.938em;
   letter-spacing: 0.03em;
   padding: 0.5rem;
   color: #172b4d;
@@ -285,7 +285,7 @@ textarea {
     position: fixed;
     z-index: 1;
     overflow: auto;
-    font-size: 32px;
+    font-size: 2em;
     font-weight: 600;
     color: white;
   }
@@ -351,7 +351,7 @@ textarea {
   .about-header h2 {
     display: flex;
     font-weight: 700;
-    font-size: 40px;
+    font-size: 2.5em;
     align-items: center;
     color: #172b4d;
     padding-left: 1rem;
@@ -371,7 +371,7 @@ textarea {
     flex-direction: column;
     width: 95%;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 1.25em;
     line-height: 24px;
     padding-top: 2rem;
   }
@@ -416,7 +416,7 @@ textarea {
     border-radius: 8px;
     justify-content: center;
     font-weight: 500;
-    font-size: 15px;
+    font-size: 0.938em;
     gap: 1rem;
   }
 
@@ -470,7 +470,7 @@ textarea {
     flex-direction: row;
     justify-content: flex-end;
     font-weight: 500;
-    font-size: 15px;
+    font-size: 0.938em;
     color: #344563;
     gap: 1rem;
     padding-right: 0.5rem;
@@ -526,7 +526,7 @@ textarea {
   .about-header h2 {
     flex-direction: column;
     font-weight: 700;
-    font-size: 40px;
+    font-size: 2.5em;
     line-height: 52px;
     padding-right: 80%;
   }
@@ -542,7 +542,7 @@ textarea {
     flex-direction: column;
     width: 40%;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 1.25em;
     line-height: 24px;
     padding-right: 10%;
     padding-top: 10%;
@@ -591,7 +591,7 @@ textarea {
     text-align: center;
     justify-content: center;
     font-weight: 500;
-    font-size: 15px;
+    font-size: 0.938em;
     line-height: 20px;
   }
 
@@ -656,7 +656,7 @@ textarea {
 
 .modal-header-title {
   font-weight: 700;
-  font-size: 40px;
+  font-size: 2.5em;
 }
 
 .modal-close-button {
@@ -678,7 +678,7 @@ textarea {
 .modal-subtitle-part-2 {
   color: #7a869a;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 0.938em;
 }
 
 .image-container {
@@ -703,7 +703,7 @@ textarea {
     width: 50%;
     justify-content: center;
     font-weight: 500;
-    font-size: 15px;
+    font-size: 0.938em;
     border: 1px solid #dfe1e6;
   }
 }
@@ -726,7 +726,7 @@ textarea {
 
 .modal-footer-left {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1em;
 }
 
 .modal-footer-right-l1ist {
@@ -745,7 +745,7 @@ textarea {
   background: #ebebff;
   border-radius: 8px;
   font-weight: 500;
-  font-size: 12px;
+  font-size: 0.75em;
   letter-spacing: 0.03em;
   color: #6070ff;
 }
