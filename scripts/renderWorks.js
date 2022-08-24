@@ -3,19 +3,20 @@ const apostrophe = '\u0027';
 export const worksData = [
   {
     id: 0,
-    ProjectName: 'Tonic',
-    ProjectSubtitle: `CANOPY ${bullet} Back End Dev ${bullet} 2015`,
-    ProjectSubtitle1: 'CANOPY',
-    ProjectSubtitle2: ` ${bullet} Back End Dev ${bullet} 2015`,
-    Image: './assets/Portfolio_1.png',
-    ProjectDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    ProjectName: 'AfriCities 2022',
+    ProjectSubtitle: 'The 9th AfriCities Summit 2022',
+    ProjectSubtitle1: 'Celebrating African Excellence',
+    ProjectSubtitle2: ` ${bullet} Full Stack Dev ${bullet} 2022`,
+    Image: './assets/Microverse-Capstone-home-full-page-desktop.png',
+    ProjectDescription: 'A website showcasing the AfriCities Summit in Kisumu County, Kenya',
     Technologies: [
       'html',
+      'scss',
       'css',
       'javascript',
     ],
-    ProjectLink: 'https://walterokumu.github.io/walter-okumu-portfolio/',
-    GitHubLink: 'https://github.com/WalterOkumu/walter-okumu-portfolio',
+    ProjectLink: 'https://walterokumu.github.io/microverse-capstone-1/',
+    GitHubLink: 'https://github.com/WalterOkumu/microverse-capstone-1',
   },
   {
     id: 1,

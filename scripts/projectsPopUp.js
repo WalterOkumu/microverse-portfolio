@@ -10,8 +10,7 @@ const project2Button = document.getElementById('worksButton-2');
 const project3Button = document.getElementById('worksButton-3');
 
 function checkOutsideClick(projectModal) {
-  // eslint-disable-next-line func-names
-  window.onclick = function (event) {
+  window.onclick = (event) => {
     if (event.target === projectModal) {
       projectModal.style.display = 'none';
       body.style.overflow = 'auto';
@@ -90,10 +89,16 @@ function createModal(wkDataIndex) {
   const modalFooterRightButton1 = createButton('modal-button');
 
   modalFooterRightButton1.innerHTML = 'See Live <i class="bi bi-arrow-up-right-circle"></i>';
+  modalFooterRightButton1.onclick = () => {
+    window.open(`${worksData[wkDataIndex].ProjectLink}`, '_blank');
+  };
 
   const modalFooterRightButton2 = createButton('modal-button');
 
   modalFooterRightButton2.innerHTML = 'See Source <i class="fa-brands fa-github github-icon"></i>';
+  modalFooterRightButton2.onclick = () => {
+    window.open(`${worksData[wkDataIndex].GitHubLink}`, '_blank');
+  };
 
   modalFooterRightList.innerHTML = modalFooterRightListItem.replace(/,/g, '');
 
@@ -124,8 +129,7 @@ function createModal(wkDataIndex) {
   return projectModal;
 }
 
-// eslint-disable-next-line func-names
-project0Button.onclick = function () {
+project0Button.onclick = () => {
   const wkDataIndex = 0;
 
   const projectModal = createModal(wkDataIndex);
@@ -139,8 +143,7 @@ project0Button.onclick = function () {
   body.style.overflow = 'hidden';
 };
 
-// eslint-disable-next-line func-names
-project1Button.onclick = function () {
+project1Button.onclick = () => {
   const wkDataIndex = 1;
 
   const projectModal = createModal(wkDataIndex);
@@ -154,8 +157,7 @@ project1Button.onclick = function () {
   body.style.overflow = 'hidden';
 };
 
-// eslint-disable-next-line func-names
-project2Button.onclick = function () {
+project2Button.onclick = () => {
   const wkDataIndex = 2;
 
   const projectModal = createModal(wkDataIndex);
@@ -169,8 +171,7 @@ project2Button.onclick = function () {
   body.style.overflow = 'hidden';
 };
 
-// eslint-disable-next-line func-names
-project3Button.onclick = function () {
+project3Button.onclick = () => {
   const wkDataIndex = 3;
 
   const projectModal = createModal(wkDataIndex);

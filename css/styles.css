@@ -76,6 +76,7 @@ ul {
   gap: 15px;
   padding: 1px;
   margin: 1px;
+  font-size: 25px;
 }
 
 .connect-about {
@@ -89,26 +90,22 @@ ul {
   gap: 15px;
   padding: 1px;
   margin: 1px;
+  font-size: 25px;
 }
 
 .twitter-icon:hover {
-  background-color: palegreen;
+  background-color: #7f8cff;
+  padding: 10px;
 }
 
 .linkedin-icon:hover {
-  background-color: palegreen;
-}
-
-.medium-icon:hover {
-  background-color: palegreen;
+  background-color: #7f8cff;
+  padding: 10px;
 }
 
 .github-icon:hover {
-  background-color: palegreen;
-}
-
-.angellist-icon:hover {
-  background-color: palegreen;
+  background-color: #7f8cff;
+  padding: 10px;
 }
 
 .works {
@@ -150,6 +147,7 @@ ul {
   text-align: center;
   background: #ebebff;
   padding: 5px 10px 5px 10px;
+  margin: 3px;
 }
 
 .button {
