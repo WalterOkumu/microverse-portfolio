@@ -8,6 +8,7 @@ const project0Button = document.getElementById('worksButton-0');
 const project1Button = document.getElementById('worksButton-1');
 const project2Button = document.getElementById('worksButton-2');
 const project3Button = document.getElementById('worksButton-3');
+const project4Button = document.getElementById('worksButton-4');
 
 function checkOutsideClick(projectModal) {
   window.onclick = (event) => {
@@ -173,6 +174,20 @@ project2Button.onclick = () => {
 
 project3Button.onclick = () => {
   const wkDataIndex = 3;
+
+  const projectModal = createModal(wkDataIndex);
+
+  projectModal.style.display = 'flex';
+
+  checkOutsideClick(projectModal);
+
+  body.appendChild(projectModal);
+
+  body.style.overflow = 'hidden';
+};
+
+project4Button.onclick = () => {
+  const wkDataIndex = 4;
 
   const projectModal = createModal(wkDataIndex);
 
